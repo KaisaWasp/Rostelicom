@@ -1,0 +1,29 @@
+:root {
+  --app-color-background: #f7f6fa;
+  --app-color-surface: #fff;
+  --app-color-surface-secondary: #f0edf6;
+  --app-color-surface-tint: rgb(232 210 237 / 58%);
+  --app-color-surface-glass: rgb(255 255 255 / 72%);
+  --app-color-text: #172033;
+  --app-color-text-secondary: #667085;
+  --app-color-border: rgb(227 232 236 / 88%);
+  --app-color-border-strong: rgb(119 0 255 / 18%);
+  /* stylelint-disable-next-line color-hex-length -- Rostelecom Purple uses its official value. */
+  --app-color-brand-primary: #7700ff;
+  --app-color-brand-attention: #ff4f12;
+  --app-color-brand-information: #749fd6;
+  --app-color-brand-selection: #e8d2ed;
+  --app-color-brand-neutral: #e3e8ec;
+  --app-color-analytics-surface: #101828;
+  --app-color-analytics-text: #f8fafc;
+  --app-color-analytics-muted: #b8c3d6;
+  --app-radius-small: 8px;
+  --app-radius-medium: 16px;
+  --app-radius-large: 24px;
+  --app-shadow-card: 0 1px 2px rgb(16 24 40 / 4%), 0 10px 28px rgb(40 26 61 / 7%);
+  --app-shadow-float: 0 12px 36px rgb(32 20 51 / 12%);
+  --app-shadow-focus: 0 0 0 4px rgb(119 0 255 / 12%);
+  --app-layout-sider-width: 264px;
+  --app-layout-header-height: 64px;
+  --app-content-max-width: 1600px;
+}

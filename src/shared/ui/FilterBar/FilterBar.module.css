@@ -1,0 +1,48 @@
+.root {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 12px 10px 16px;
+  background: linear-gradient(120deg, var(--app-color-surface-glass), rgb(232 210 237 / 36%));
+  border: 1px solid rgb(227 232 236 / 82%);
+  border-radius: var(--app-radius-medium);
+  box-shadow: var(--app-shadow-card);
+  backdrop-filter: blur(12px);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.actions {
+  margin-inline-start: auto;
+}
+
+.counter {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  color: var(--app-color-analytics-text);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  place-items: center;
+  background: linear-gradient(135deg, var(--app-color-brand-primary), #8b2cff);
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgb(119 0 255 / 28%);
+}
+
+@media (width <= 767px) {
+  .root {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    margin-inline-start: 0;
+  }
+}

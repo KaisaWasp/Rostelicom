@@ -1,0 +1,51 @@
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--app-content-max-width);
+  margin: 0 auto 20px;
+  padding: 4px 0;
+}
+
+.main {
+  display: grid;
+  gap: 8px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  max-width: 760px;
+  margin-top: 10px;
+  color: var(--app-color-text-secondary);
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (width <= 767px) {
+  .root {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .actions {
+    justify-content: flex-start;
+  }
+}

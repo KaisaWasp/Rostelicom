@@ -1,0 +1,36 @@
+.root {
+  display: grid;
+  gap: 24px;
+  max-width: 920px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.description {
+  margin: 8px 0 0;
+  color: var(--app-color-text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--app-color-border);
+  border-radius: var(--app-radius-medium);
+  background: var(--app-color-surface);
+}
+
+.swatch {
+  height: 88px;
+  border: 1px solid rgb(23 32 51 / 8%);
+  border-radius: var(--app-radius-small);
+}

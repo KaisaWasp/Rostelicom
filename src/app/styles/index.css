@@ -1,0 +1,22 @@
+@import url('./reset.css');
+@import url('./tokens.css');
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 92% -10%, rgb(232 210 237 / 58%), transparent 27rem),
+    radial-gradient(circle at -6% 26%, rgb(116 159 214 / 12%), transparent 25rem),
+    var(--app-color-background);
+  color: var(--app-color-text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  color: var(--app-color-text);
+  background: var(--app-color-brand-selection);
+}

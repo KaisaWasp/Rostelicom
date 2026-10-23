@@ -1,0 +1,73 @@
+.project-card {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  color: var(--app-color-text);
+  text-align: left;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--app-radius-small);
+  transition:
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.project-card:hover {
+  background: var(--app-color-surface-secondary);
+  border-color: var(--app-color-border);
+}
+
+.project-selected {
+  padding-inline: 0 !important;
+  background: var(--app-color-brand-selection);
+  border-radius: var(--app-radius-small);
+}
+
+.project-heading {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-card > span {
+  color: var(--app-color-text-secondary);
+  font-size: 13px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.geo-canvas {
+  display: grid;
+  min-height: 390px;
+  gap: 18px;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  background-image:
+    radial-gradient(circle at 30% 40%, rgb(116 159 214 / 45%) 0 8%, transparent 9%),
+    radial-gradient(circle at 72% 60%, rgb(119 0 255 / 32%) 0 6%, transparent 7%),
+    linear-gradient(135deg, rgb(255 255 255 / 5%), transparent 48%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: var(--app-radius-medium);
+}
+
+.geo-icon {
+  color: var(--app-color-brand-attention);
+  font-size: 48px;
+}
+
+.geo-canvas :global(.ant-progress) {
+  max-width: 260px;
+}
+
+.drawer-content {
+  display: grid;
+  gap: 20px;
+}

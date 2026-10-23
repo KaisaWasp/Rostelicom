@@ -1,0 +1,113 @@
+.steps {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  background: var(--app-color-surface-glass);
+  border: 1px solid rgb(227 232 236 / 82%);
+  border-radius: var(--app-radius-medium);
+  box-shadow: var(--app-shadow-card);
+  backdrop-filter: blur(12px);
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.form-column {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+}
+
+.summary {
+  display: grid;
+  gap: 20px;
+  padding: 18px;
+  background: linear-gradient(145deg, var(--app-color-surface-tint), rgb(255 255 255 / 64%));
+  border: 1px solid rgb(119 0 255 / 10%);
+  border-radius: var(--app-radius-medium);
+}
+
+.summary-label {
+  color: var(--app-color-text-secondary);
+}
+
+.range {
+  color: var(--app-color-brand-primary);
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.range-track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  color: var(--app-color-text-secondary);
+  font-size: 12px;
+}
+
+.range-track::before {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  left: 4px;
+  height: 10px;
+  content: '';
+  background: linear-gradient(
+    90deg,
+    var(--app-color-brand-information),
+    var(--app-color-brand-primary)
+  );
+  border-radius: 999px;
+}
+
+.range-target {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: var(--app-color-text);
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.range-end {
+  text-align: right;
+}
+
+.factor-list {
+  display: grid;
+  gap: 10px;
+}
+
+.factor-list span {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--app-color-text-secondary);
+  border-bottom: 1px solid rgb(119 0 255 / 8%);
+}
+
+.factor-list strong {
+  color: var(--app-color-brand-primary);
+}
+
+@media (width <= 1199px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 767px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

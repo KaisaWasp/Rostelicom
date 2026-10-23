@@ -1,0 +1,76 @@
+.layout {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.sider {
+  background: var(--app-color-surface-glass) !important;
+  border-inline-end: 1px solid var(--app-color-border);
+  box-shadow: 12px 0 32px rgb(38 26 57 / 3%);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: var(--app-layout-header-height);
+  padding: 0 20px;
+  border-block-end: 1px solid rgb(227 232 236 / 72%);
+}
+
+.menu {
+  padding: 20px 12px;
+  background: transparent;
+  border-inline-end: 0 !important;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: var(--app-layout-header-height);
+  padding: 0 32px;
+  background: var(--app-color-surface-glass);
+  border-block-end: 1px solid rgb(227 232 236 / 72%);
+  box-shadow: 0 8px 24px rgb(31 20 49 / 4%);
+  backdrop-filter: blur(18px);
+}
+
+.header-title {
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-inline-start: auto;
+}
+
+.content {
+  padding: 28px 32px 40px;
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .sider,
+  .header {
+    background: var(--app-color-surface);
+  }
+}
+
+@media (width <= 767px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .content {
+    padding: 20px 16px 28px;
+  }
+}

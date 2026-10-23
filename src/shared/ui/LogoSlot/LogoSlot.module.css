@@ -1,0 +1,14 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  min-width: 104px;
+  min-height: 28px;
+}
+
+.placeholder {
+  color: var(--app-color-text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
